@@ -35,9 +35,10 @@ function displayPics(){
       viewed.push(rando);
     }
   }
-  console.log(rando);
-  // TODO: In a sentence or two, explain why the previous line of code threw an error when we changed the variable declaration from `let to `let`.
-  // PUT YOUR RESPONSE IN THIS COMMENT
+  // console.log(rando);
+  // commented out the console.log
+  // TODO: In a sentence or two, explain why the previous line of code threw an error when we changed the variable declaration from `var to `let`.
+  // I think it was because the let declaration was scoped to the while loop and the console.log was trying to access it from outside of the function.
   console.log(viewed);
 
   for (let i = 0; i < 3; i++){
