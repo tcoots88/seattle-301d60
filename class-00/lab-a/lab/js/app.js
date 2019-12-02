@@ -41,7 +41,7 @@ function displayPics(){
   // I think it was because the let declaration was scoped to the while loop and the console.log was trying to access it from outside of the function.
   console.log(viewed);
 
-  for (const i = 0; i < 3; i++){
+  for (let i = 0; i < 3; i++){
     const temp = viewed.shift();
     pics[i].src = allProducts[temp].path;
     pics[i].id = allProducts[temp].name;
